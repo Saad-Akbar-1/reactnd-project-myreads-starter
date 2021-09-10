@@ -5,7 +5,6 @@ import { Route } from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 import BooksList from './BooksList'
 import Search from './Search'
-import { Link } from 'react-router-dom'
 
 
 class BooksApp extends React.Component {
@@ -50,15 +49,15 @@ class BooksApp extends React.Component {
           />
         )} />
         <div className="open-search">
+        
         <Route path='/search' render={() => (
               <Search 
                 books={this.state.books}
                 updatebook={this.updatebook}
               />
           )}/>
+        
         </div>
-
-
       </div>
     )
   }

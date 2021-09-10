@@ -2,6 +2,7 @@ import React from 'react'
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import './BooksList.css'
 
 
 
@@ -17,6 +18,7 @@ class BooksList extends Component {
     }
     render() {
         const { books,updatebook } = this.props
+        
         return (
             <div className="list-books">
                 <div className="list-books-title">
@@ -111,7 +113,15 @@ class BooksList extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="open-search">
+                    <Link to='/search'className='search'>
+                    <button type="button">
+                    console.log("Clicked!")
+                    </button>              
+                    </Link>
+                </div>
             </div>
+            
         )
     }
 }
