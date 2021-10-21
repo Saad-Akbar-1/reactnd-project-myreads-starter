@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import * as BooksAPI from './BooksAPI'
 
-
 class Search extends Component {
     state = {
         searchedbooks: []
